@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="contact-section">
+            <h1>Contact Me</h1>
+            <p>I'm always open to connecting with fellow developers, potential collaborators, or anyone interested in my work. Feel free to reach out through the contact form below.</p>
+
+            <form id="contact-form" action="mailto:guey0006@algonquinlive.com">
+                <div id="name-email">
+                    <div class="form-class">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+                    </div>
+
+                    <div class="form-class">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="jack@example.com"><br>
+                    </div>
+                </div>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Subject of your message" minlength="3" maxlength="100"><br>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required minlength="10" maxlength="1000"></textarea><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>&copy; 2026 Boris Gueye. All rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

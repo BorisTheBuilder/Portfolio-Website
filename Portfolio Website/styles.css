@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1F2535;
+    color: #F5F5F5;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+img {
+    width: 100%;
+    max-height: 800px;
+    height: auto;
+    aspect-ratio: 16/9;
+    display: block;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #D4C5A0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #D4C5A0;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #F5F5F5;
+    text-align: center;
+    max-width: 800px;
+}
+
+a {
+    color:#F5F5F5;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.navbar a{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero div {
+  position: absolute;
+  text-align: center;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#about-college, #skills {
+  display: flex;
+  gap: 2rem;
+}
+
+#about-college > div{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 50%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+button {
+    background-color: #F5F5F5;
+    color: #1F2535;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0px;
+}
+
+#name-email {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 16px;
+}
+
+.form-class {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  border: 0px;
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  border: 0px;
+  border-radius: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #1F2535;
+  box-shadow: 0 0 8px #F5F5F5;
+  color: #F5F5F5;
+  transform: scale(1.05);
+}
+
+label {
+  font-weight: bold;
+}
+
+#project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;}
+
+button:hover {
+  box-shadow: 0 0 8px #F5F5F5;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+
+    #about-college {
+        flex-direction: column;
+    }
+
+    #about-college > div {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card div {
+        width: auto;
+    }
+
+    .project-card img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    #name-email {
+      flex-direction: column;
+      gap: 0px;
+    }
+
+    #skills {
+      flex-wrap: wrap;
+    }
+
+    #hero div {
+      position: relative;
+    }
+
+    #hero div h1 {
+      font-size: 2rem;
+    }
+}
